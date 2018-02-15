@@ -1,0 +1,54 @@
+<h1> new project upload </h1>
+<p> in no particular order </p>
+<%= form_with scope: :project, url: projects_path, local: true do |form| %>
+  <p>
+    <%= form.label :project_name %><br>
+    <%= form.text_field :name %>
+  </p>
+ 
+  <p>
+    <%= form.label :description %><br>
+    <%= form.text_area :text %>
+  </p>
+  <p>
+    <%= form.label :quick_description %><br>
+    <%= form.text_field :excerpt %>
+  </p>
+  <p>
+    <%= form.label :video_upload %><br>
+    <%= form.text_field :video %>
+  </p>
+  <p>
+    <%= form.label :how_will_you_contribute %><br>
+    <%= form.text_field :contribute %>
+  </p>
+  <p>
+    <%= form.label :your_website_url %><br>
+    <%= form.text_field :url %>
+  </p>
+  <p>
+    <%= form.label :how_will_you_contribute %><br>
+    <%= form.text_field :contribute %>
+  </p>
+  <p>
+    <%= form.label :how_will_collaborators_be_compensated %><br>
+    <%= form.text_field :compensation %>
+  </p>
+  <p>
+    <%= form.label :what_is_your_budget_for_the_project %><br>
+    <%= form.text_field :budget %>
+  </p>
+  <p>
+    <%= form.label :where_will_the_project_be_held %><br>
+    <%= form.text_field :location %>
+  </p>
+  <p>
+    <%= form.label :upload_logo_will_fix_soon %><br>
+    <%= form.text_field :contribute %>
+  </p>
+
+ 
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>
